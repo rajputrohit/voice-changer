@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		522A27CC2029BD2800BBBFC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522A27CB2029BD2800BBBFC2 /* AppDelegate.swift */; };
-		522A27CE2029BD2800BBBFC2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522A27CD2029BD2800BBBFC2 /* ViewController.swift */; };
 		522A27D12029BD2800BBBFC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522A27CF2029BD2800BBBFC2 /* Main.storyboard */; };
 		522A27D32029BD2800BBBFC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 522A27D22029BD2800BBBFC2 /* Assets.xcassets */; };
 		522A27D62029BD2800BBBFC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522A27D42029BD2800BBBFC2 /* LaunchScreen.storyboard */; };
+		529F78C6202ACDF4000767DA /* PlaybackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529F78C5202ACDF4000767DA /* PlaybackViewController.swift */; };
+		529F78C8202AD16F000767DA /* RecordSoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529F78C7202AD16F000767DA /* RecordSoundViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		522A27C82029BD2800BBBFC2 /* voice-changer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "voice-changer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		522A27CB2029BD2800BBBFC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		522A27CD2029BD2800BBBFC2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		522A27D02029BD2800BBBFC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		522A27D22029BD2800BBBFC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		522A27D52029BD2800BBBFC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		522A27D72029BD2800BBBFC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		529F78C5202ACDF4000767DA /* PlaybackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackViewController.swift; sourceTree = "<group>"; };
+		529F78C7202AD16F000767DA /* RecordSoundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordSoundViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				522A27CB2029BD2800BBBFC2 /* AppDelegate.swift */,
-				522A27CD2029BD2800BBBFC2 /* ViewController.swift */,
+				529F78C7202AD16F000767DA /* RecordSoundViewController.swift */,
+				529F78C5202ACDF4000767DA /* PlaybackViewController.swift */,
 				522A27CF2029BD2800BBBFC2 /* Main.storyboard */,
 				522A27D22029BD2800BBBFC2 /* Assets.xcassets */,
 				522A27D42029BD2800BBBFC2 /* LaunchScreen.storyboard */,
@@ -136,7 +139,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				522A27CE2029BD2800BBBFC2 /* ViewController.swift in Sources */,
+				529F78C6202ACDF4000767DA /* PlaybackViewController.swift in Sources */,
+				529F78C8202AD16F000767DA /* RecordSoundViewController.swift in Sources */,
 				522A27CC2029BD2800BBBFC2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
