@@ -10,8 +10,6 @@ import UIKit
 import AVFoundation
 
 class PlaybackViewController: UIViewController {
-
-    var recordedAudioURL: URL!
     
     @IBOutlet weak var snailButton: UIButton!
     @IBOutlet weak var rabbitButton: UIButton!
@@ -21,6 +19,7 @@ class PlaybackViewController: UIViewController {
     @IBOutlet weak var reverbButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
     
+    var recordedAudioURL: URL!
     var audioFile:AVAudioFile!
     var audioEngine:AVAudioEngine!
     var audioPlayerNode: AVAudioPlayerNode!
@@ -29,7 +28,7 @@ class PlaybackViewController: UIViewController {
     enum ButtonType: Int {
         case slow = 0, fast, chipmunk, vader, echo, reverb
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupAudio()
@@ -40,9 +39,7 @@ class PlaybackViewController: UIViewController {
         configureUI(.notPlaying)
     }
     
-    
     @IBAction func playSoundForButton(_ sender: Any) {
-        
         switch(ButtonType(rawValue: (sender as AnyObject).tag)!) {
         case .slow:
             playSound(rate: 0.5)
@@ -57,13 +54,10 @@ class PlaybackViewController: UIViewController {
         case .reverb:
             playSound(reverb: true)
         }
-        
         configureUI(.playing)
-        
     }
     
     @IBAction func stopButtonPressed(_ sender: Any) {
         stopAudio()
     }
-    
 }

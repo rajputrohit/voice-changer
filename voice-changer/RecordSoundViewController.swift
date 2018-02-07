@@ -19,16 +19,13 @@ class RecordSoundViewController: UIViewController, AVAudioRecorderDelegate {
   
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         stopRecordingButton.isEnabled = false
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
     }
  
-    
     @IBAction func startRecordingButtonDidPress(_ sender: Any) {
         startRecordingButton.isEnabled = false
         stopRecordingButton.isEnabled = true
@@ -38,11 +35,9 @@ class RecordSoundViewController: UIViewController, AVAudioRecorderDelegate {
         let recordingName = "recordedVoice.wav"
         let pathArray = [dirPath, recordingName]
         let filePath = URL(fileURLWithPath: pathArray.joined(separator: "/"))
-        print(filePath)
         
         let session = AVAudioSession.sharedInstance()
         try! session.setCategory(AVAudioSessionCategoryPlayAndRecord, with: .defaultToSpeaker)
-//        try! session.setActive(true)
         
         try! audioRecorder  = AVAudioRecorder(url: filePath, settings: [:])
         audioRecorder.isMeteringEnabled = true
@@ -51,7 +46,6 @@ class RecordSoundViewController: UIViewController, AVAudioRecorderDelegate {
         audioRecorder.delegate = self
         audioRecorder.prepareToRecord()
         audioRecorder.record()
-        
     }
  
     
@@ -79,10 +73,6 @@ class RecordSoundViewController: UIViewController, AVAudioRecorderDelegate {
         } else {
             print("Recording failed")
         }
-        
     }
-    
-    
-    
 }
 
