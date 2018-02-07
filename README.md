@@ -3,16 +3,16 @@ A sample iOS application which makes use of Apple Audio Engine to convert audio 
 
 The recorded sound can be converted into the following effects:
 
-1)Reverb
+1)Dart Vader voice effect
 
-2)Echo
+2)Chipmunk like voice
 
-3)Fast Playback
+3)Reverb
 
 4)Super Slow Playback
 
-5)Chipmunk effect
+5)Fast Playback
 
-6)Dart Vader voice effect
+6)Echo
 
 
